@@ -17,7 +17,7 @@ app = Flask(__name__)
 app.secret_key = "viphap_exam_mixer_super_secret"
 
 ALLOWED_USERS = {
-    "admin": "admin123",
+    "nguyenthanhthuy": "848538",
     "viphap": "viphap999"
 }
 
