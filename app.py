@@ -47,10 +47,19 @@ HTML_TEMPLATE = """
             </div>
 
             <div>
-                <label class="block text-sm font-medium text-slate-300 mb-2">Số lượng mã đề cần tạo:</label>
-                <input type="number" name="num_codes" min="1" max="50" value="4" 
+                <label class="block text-sm font-medium text-slate-300 mb-2">Danh sách Mã đề (VD: 301-304 hoặc 101,102):</label>
+                <input type="text" name="exam_codes" value="301-304" 
                     class="w-full px-4 py-3 bg-slate-800/50 border border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white placeholder-slate-500 transition-colors"
                     required>
+            </div>
+            
+            <div>
+                <label class="block text-sm font-medium text-slate-300 mb-2">Cỡ chữ (Font Size):</label>
+                <select name="font_size" class="w-full px-4 py-3 bg-slate-800/50 border border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white transition-colors">
+                    <option value="12">Size 12 (Nhỏ gọn)</option>
+                    <option value="13" selected>Size 13 (Tiêu chuẩn)</option>
+                    <option value="14">Size 14 (To rõ ràng)</option>
+                </select>
             </div>
             
             <button type="submit" id="submitBtn" class="btn-gradient w-full py-3.5 rounded-lg text-white font-semibold text-lg shadow-lg flex justify-center items-center">
@@ -297,7 +306,7 @@ def replace_exam_code(doc, new_code):
                 
                 current_idx = r_end
 
-def generate_exam_linear(questions, exam_code, original_path):
+def generate_exam_linear(questions, exam_code, original_path, font_size_val='26'):
     doc = Document(original_path)
     replace_exam_code(doc, str(exam_code))
     # We will use the original doc as template to keep headers right.
@@ -328,7 +337,7 @@ def generate_exam_linear(questions, exam_code, original_path):
     # Process part 1
     if part_1:
         p_hdr = doc.add_paragraph("PHẦN I. Câu trắc nghiệm nhiều phương án lựa chọn (3,0 điểm). Thí sinh trả lời từ câu 1 đến câu 12. Mỗi câu hỏi thí sinh chỉ chọn một phương án.")
-        normalize_p(p_hdr._p, font_size_val='26')
+        normalize_p(p_hdr._p, font_size_val=font_size_val)
         for i, q in enumerate(part_1):
             q_num = i + 1
             # Append headers
@@ -338,7 +347,7 @@ def generate_exam_linear(questions, exam_code, original_path):
                 if j == 0:
                     strip_question_prefix(new_p)
                     new_p.insert(0, get_or_create_r(f"Câu {q_num}: ", True))
-                normalize_p(new_p, font_size_val='26')
+                normalize_p(new_p, font_size_val=font_size_val)
                 insert_p(doc, new_p)
             
             opts = copy.copy(q['opts'])
@@ -365,7 +374,7 @@ def generate_exam_linear(questions, exam_code, original_path):
                 remove_highlights(new_p)
                 strip_option_prefix(new_p)
                 new_p.insert(0, get_or_create_r(opt_labels[new_idx] + " ", False))
-                normalize_p(new_p, font_size_val='26')
+                normalize_p(new_p, font_size_val=font_size_val)
                 cell._tc.append(new_p)
                 
             final_answer = chr(ord('A') + new_ans_idx)
@@ -374,7 +383,7 @@ def generate_exam_linear(questions, exam_code, original_path):
     # Process part 2
     if part_2:
         p_hdr = doc.add_paragraph("PHẦN II. Câu trắc nghiệm đúng sai (2,0 điểm). Thí sinh trả lời từ câu 1 đến câu 2. Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh chọn đúng hoặc sai.")
-        normalize_p(p_hdr._p, font_size_val='26')
+        normalize_p(p_hdr._p, font_size_val=font_size_val)
         for i, q in enumerate(part_2):
             q_num = i + 1
             for j, p in enumerate(q['head']):
@@ -383,7 +392,7 @@ def generate_exam_linear(questions, exam_code, original_path):
                 if j == 0:
                     strip_question_prefix(new_p)
                     new_p.insert(0, get_or_create_r(f"Câu {q_num}: ", True))
-                normalize_p(new_p, font_size_val='26')
+                normalize_p(new_p, font_size_val=font_size_val)
                 insert_p(doc, new_p)
             
             opts = copy.copy(q['opts'])
@@ -402,7 +411,7 @@ def generate_exam_linear(questions, exam_code, original_path):
                 remove_highlights(new_p)
                 strip_option_prefix(new_p)
                 new_p.insert(0, get_or_create_r(opt_labels[new_idx] + " ", False))
-                normalize_p(new_p, font_size_val='26')
+                normalize_p(new_p, font_size_val=font_size_val)
                 insert_p(doc, new_p)
                 
             final_answer = "".join(new_ans_chars)
@@ -411,7 +420,7 @@ def generate_exam_linear(questions, exam_code, original_path):
     # Process part 3
     if part_3:
         p_hdr = doc.add_paragraph("PHẦN III. Câu trắc nghiệm trả lời ngắn (2,0 điểm). Thí sinh trả lời từ câu 1 đến câu 8.")
-        normalize_p(p_hdr._p, font_size_val='26')
+        normalize_p(p_hdr._p, font_size_val=font_size_val)
         for i, q in enumerate(part_3):
             q_num = i + 1
             for j, p in enumerate(q['head']):
@@ -420,7 +429,7 @@ def generate_exam_linear(questions, exam_code, original_path):
                 if j == 0:
                     strip_question_prefix(new_p)
                     new_p.insert(0, get_or_create_r(f"Câu {q_num}: ", True))
-                normalize_p(new_p, font_size_val='26')
+                normalize_p(new_p, font_size_val=font_size_val)
                 insert_p(doc, new_p)
             answers.append({'part': 3, 'q_num': q_num, 'ans': q['ans']})
     
@@ -443,7 +452,30 @@ def index():
 def mix_exams():
     temp_path = None
     try:
-        num_codes = int(request.form.get("num_codes", 4))
+        exam_codes_str = request.form.get("exam_codes", "301-304")
+        font_size_pt = request.form.get("font_size", "13")
+        font_size_val = str(int(font_size_pt) * 2)
+        
+        # Parse exam codes
+        exam_codes = []
+        for part in exam_codes_str.split(','):
+            part = part.strip()
+            if not part: continue
+            if '-' in part:
+                try:
+                    start_str, end_str = part.split('-')
+                    start_num = int(start_str.strip())
+                    end_num = int(end_str.strip())
+                    padding = len(start_str.strip())
+                    for n in range(start_num, end_num + 1):
+                        exam_codes.append(str(n).zfill(padding))
+                except:
+                    exam_codes.append(part)
+            else:
+                exam_codes.append(part)
+        
+        if not exam_codes:
+            exam_codes = ["101"]
         
         file = request.files.get("exam_file")
         if not file or file.filename == "":
@@ -462,10 +494,8 @@ def mix_exams():
         all_exam_answers = {}
         
         with zipfile.ZipFile(zip_buffer, "w", zipfile.ZIP_DEFLATED) as zip_file:
-            start_code = 101
-            for i in range(num_codes):
-                code = str(start_code + i)
-                exam_bytes, exam_ans = generate_exam_linear(questions, code, temp_path)
+            for code in exam_codes:
+                exam_bytes, exam_ans = generate_exam_linear(questions, code, temp_path, font_size_val)
                 zip_file.writestr(f"De_{code}.docx", exam_bytes)
                 all_exam_answers[code] = exam_ans
                 
@@ -475,7 +505,8 @@ def mix_exams():
             ws.title = "Dap_An"
             
             ws.cell(row=1, column=1, value="Mã Đề")
-            example_ans = all_exam_answers[str(start_code)]
+            first_code = exam_codes[0]
+            example_ans = all_exam_answers[first_code]
             for col_idx, ans_info in enumerate(example_ans):
                 label = f"Câu {ans_info['part']}.{ans_info['q_num']}"
                 ws.cell(row=1, column=col_idx + 2, value=label)
