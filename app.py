@@ -8,12 +8,70 @@ from io import BytesIO
 import openpyxl
 from datetime import datetime
 
-from flask import Flask, request, send_file, render_template_string
+from flask import Flask, request, send_file, render_template_string, session, redirect, url_for
 from docx import Document
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 
 app = Flask(__name__)
+app.secret_key = "viphap_exam_mixer_super_secret"
+
+ALLOWED_USERS = {
+    "admin": "admin123",
+    "viphap": "viphap999"
+}
+
+LOGIN_TEMPLATE = """
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập - Tool Trộn Đề Thi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; }
+        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
+        .btn-gradient { background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); transition: transform 0.2s, box-shadow 0.2s; }
+        .btn-gradient:hover { transform: translateY(-2px); box-shadow: 0 10px 15px -3px rgba(139, 92, 246, 0.4); }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+    <div class="glass w-full max-w-sm rounded-2xl p-8 shadow-2xl">
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500 mb-2">Đăng Nhập</h1>
+            <p class="text-slate-400 text-sm">Vui lòng đăng nhập để sử dụng</p>
+        </div>
+        
+        {% if error %}
+        <div class="mb-4 p-3 bg-red-500/20 border border-red-500 rounded text-red-400 text-sm text-center">
+            {{ error }}
+        </div>
+        {% endif %}
+        
+        <form action="/login" method="POST" class="space-y-6">
+            <div>
+                <label class="block text-sm font-medium text-slate-300 mb-2">Tên đăng nhập:</label>
+                <input type="text" name="username" 
+                    class="w-full px-4 py-3 bg-slate-800/50 border border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white placeholder-slate-500 transition-colors"
+                    required>
+            </div>
+            
+            <div>
+                <label class="block text-sm font-medium text-slate-300 mb-2">Mật khẩu:</label>
+                <input type="password" name="password" 
+                    class="w-full px-4 py-3 bg-slate-800/50 border border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white placeholder-slate-500 transition-colors"
+                    required>
+            </div>
+            
+            <button type="submit" class="btn-gradient w-full py-3.5 rounded-lg text-white font-semibold text-lg shadow-lg">
+                Đăng Nhập
+            </button>
+        </form>
+    </div>
+</body>
+</html>
+"""
 
 HTML_TEMPLATE = """
 <!DOCTYPE html>
@@ -35,6 +93,11 @@ HTML_TEMPLATE = """
         <div class="text-center mb-8">
             <h1 class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500 mb-2">Hệ Thống Trộn Đề Tự Do</h1>
             <p class="text-slate-400 text-sm">Trộn trực tiếp từ văn bản Word - Ép 2 cột</p>
+        </div>
+        
+        <div class="flex justify-between items-center mb-6 px-4 py-3 bg-slate-800/30 rounded-lg border border-slate-700/50">
+            <div class="text-sm">Xin chào, <span class="font-bold text-blue-400">{{ username }}</span> 👋</div>
+            <a href="/logout" class="text-xs px-3 py-1.5 bg-red-500/20 text-red-400 rounded hover:bg-red-500/40 transition-colors">Đăng xuất</a>
         </div>
         
         <form id="mixForm" action="/mix" method="POST" enctype="multipart/form-data" class="space-y-6">
@@ -477,12 +540,37 @@ def generate_exam_linear(questions, exam_code, original_path, font_size_val='26'
     return io_stream.getvalue(), answers
 
 
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    error = None
+    if request.method == "POST":
+        username = request.form.get("username", "").strip()
+        password = request.form.get("password", "").strip()
+        
+        if username in ALLOWED_USERS and ALLOWED_USERS[username] == password:
+            session['user'] = username
+            return redirect(url_for('index'))
+        else:
+            error = "Tài khoản hoặc mật khẩu không chính xác!"
+            
+    return render_template_string(LOGIN_TEMPLATE, error=error)
+
+@app.route("/logout")
+def logout():
+    session.pop('user', None)
+    return redirect(url_for('login'))
+
 @app.route("/")
 def index():
-    return render_template_string(HTML_TEMPLATE)
+    if 'user' not in session:
+        return redirect(url_for('login'))
+    return render_template_string(HTML_TEMPLATE, username=session['user'])
 
 @app.route("/mix", methods=["POST"])
 def mix_exams():
+    if 'user' not in session:
+        return redirect(url_for('login'))
+        
     temp_path = None
     try:
         exam_codes_str = request.form.get("exam_codes", "301-304")
