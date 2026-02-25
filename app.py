@@ -89,18 +89,32 @@ HTML_TEMPLATE = """
 """
 
 def has_answer_mark(element):
+    from docx.oxml.ns import qn
     for highlight in element.xpath('.//w:highlight'):
         return True
+    for shd in element.xpath('.//w:shd'):
+        fill = shd.get(qn('w:fill'))
+        if fill and fill != 'auto' and fill.lower() not in ['000000', 'ffffff', 'none']:
+            return True
+    for color in element.xpath('.//w:color'):
+        val = color.get(qn('w:val'))
+        if val and val != 'auto' and val.lower() not in ['000000']:
+            return True
     for u in element.xpath('.//w:u'):
-        # Some empty underlines might exist but we assume any underline is highlighted
-        return True
+        val = u.get(qn('w:val'))
+        if val and val != 'none':
+            return True
     return False
 
 def remove_highlights(element):
     for highlight in element.xpath('.//w:highlight'):
         highlight.getparent().remove(highlight)
+    for shd in element.xpath('.//w:shd'):
+        shd.getparent().remove(shd)
     for u in element.xpath('.//w:u'):
         u.getparent().remove(u)
+    for color in element.xpath('.//w:color'):
+        color.getparent().remove(color)
 
 def parse_freeform_docx(filename):
     doc = Document(filename)
@@ -136,7 +150,17 @@ def parse_freeform_docx(filename):
             if current_q['part'] == 3:
                 ans_match = re.match(r'^(ĐÁP ÁN|Đáp án)[\s:]*(.*)', text, re.IGNORECASE)
                 if ans_match:
-                    current_q['ans'] = ans_match.group(2).strip()
+                    val = ans_match.group(2).strip()
+                    if val:
+                        current_q['ans'] = val
+                    continue
+                elif has_answer_mark(p._p):
+                    ans_text = text.strip()
+                    # Clean trailing dot if it's like a standalone number list item e.g. "2."
+                    if ans_text and ans_text[-1] == '.' and ans_text[:-1].isdigit():
+                        ans_text = ans_text[:-1]
+                    current_q['ans'] = ans_text
+                    continue
                 else:
                     current_q['head'].append(p)
                 continue
@@ -168,7 +192,7 @@ def parse_freeform_docx(filename):
             if len(q['ans']) < 4:
                 q['ans'] = q['ans'].ljust(4, 'S')
                 
-        if not q['ans']: q['ans'] = "A" # fallback
+        if not q['ans']: q['ans'] = "?" # fallback
             
     return questions
 
