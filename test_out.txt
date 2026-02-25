@@ -1,0 +1,23 @@
+Parsed queries: 22
+Part: 1, Head len: 1, Opts: 2, Ans: A
+Part: 1, Head len: 7, Opts: 1, Ans: A
+Part: 1, Head len: 1, Opts: 1, Ans: A
+Part: 1, Head len: 1, Opts: 1, Ans: A
+Part: 1, Head len: 1, Opts: 4, Ans: C
+Part: 1, Head len: 1, Opts: 2, Ans: C
+Part: 1, Head len: 1, Opts: 1, Ans: A
+Part: 1, Head len: 1, Opts: 1, Ans: A
+Part: 1, Head len: 1, Opts: 1, Ans: A
+Part: 1, Head len: 1, Opts: 1, Ans: A
+Part: 1, Head len: 1, Opts: 1, Ans: A
+Part: 1, Head len: 1, Opts: 2, Ans: C
+Part: 2, Head len: 1, Opts: 4, Ans: 
+Part: 2, Head len: 1, Opts: 4, Ans: 
+Part: 3, Head len: 1, Opts: 0, Ans: None
+Part: 3, Head len: 1, Opts: 0, Ans: None
+Part: 3, Head len: 1, Opts: 0, Ans: None
+Part: 3, Head len: 1, Opts: 0, Ans: None
+Part: 3, Head len: 1, Opts: 0, Ans: None
+Part: 3, Head len: 2, Opts: 0, Ans: None
+Part: 3, Head len: 1, Opts: 0, Ans: None
+Part: 3, Head len: 4, Opts: 0, Ans: None

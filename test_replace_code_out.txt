@@ -1,0 +1,8 @@
+Found paragraph: Mã đề thi 302
+Run text: 'Mã'
+Run text: ' '
+Run text: 'đề'
+Run text: ' '
+Run text: 'thi'
+Run text: ' '
+Run text: '302'

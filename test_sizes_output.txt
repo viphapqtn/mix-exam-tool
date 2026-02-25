@@ -1,0 +1,48 @@
+P 2 sizes: None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None - text: PHẦN I. Câu trắc nghiệm nhiều 
+P 3 sizes: None, None, None, None, None, None, None, None, None, None, None, None, None, None - text: Câu 1: Liên kết hoá học trong 
+P 4 sizes: None, None, None, None, None - text: A. cộng hoá trị phân cực.	    
+P 5 sizes: None, None, None - text: B. cộng hoá trị không phân cực
+P 6 sizes: None, None, None, None - text: C. ion.	    
+P 7 sizes: None, None - text: D. cho-nhận.
+P 8 sizes: None, None - text: Câu 2: Cho các phát biểu sau:
+P 9 sizes: None, None - text: (a) Liên kết ion là liên kết đ
+P 10 sizes: None, None, None, None, None, None, None - text: (b) Trong phân tử C2H2 không c
+P 11 sizes: None, None - text: (c) Độ âm điện của nguyên tử l
+P 12 sizes: None, None, None, None, None, None - text: (d) Liên kết đôi gồm một liên 
+P 13 sizes: None, None, None - text: (đ) Phân tử CO2 có hai liên kế
+P 14 sizes: None - text: Số phát biểu đúng là
+P 15 sizes: None, None, None, None - text: A. 4.	    
+P 16 sizes: None, None, None, None - text: B. 3.	    
+P 17 sizes: None, None, None, None - text: C. 1.	    
+P 18 sizes: None, None - text: D. 2.
+P 19 sizes: None, None, None, None - text: Câu 3: Chất nào sau đây có chứ
+P 20 sizes: None, None, None, None, None, None - text: A. CH4.	    
+P 21 sizes: None, None, None, None, None, None - text: B. N2.	    
+P 22 sizes: None, None, None, None, None, None - text: C. Cl2.	    
+P 23 sizes: None, None, None, None - text: D. N2.
+P 24 sizes: None, None, None, None, None, None, None, None, None, None, None, None - text: Câu 4: Bảng tuần hoàn hiện nay
+P 25 sizes: None, None, None, None - text: A. 18.	    
+P 26 sizes: None, None, None, None - text: B. 6. 	    
+P 27 sizes: None, None, None, None - text: C. 8.	    
+P 28 sizes: None, None - text: D. 7.
+P 29 sizes: None, None - text: Câu 5: Những đại lượng và tính
+P 30 sizes: None, None, None, None, None, None, None, None, None, None, None, None, None, None - text: A. Tính accid – base của các h
+P 31 sizes: None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None - text: B. Cấu hình electron lớp ngoài
+P 32 sizes: None, None, None, None, None, None, None, None, None, None, None, None, None, None - text: C. Điện tích hạt nhân nguyên t
+P 33 sizes: None, None - text: D. Tính kim loại và phi kim.
+P 34 sizes: None, None, None - text: Câu 6: Trong bảng tuần hoàn, n
+P 35 sizes: None, None, None, None, None, None, None, None, None, None, None, None - text: A. 1s²2s²2p5; X2O5.	    	
+P 36 sizes: None, None, None, None, None, None, None, None - text: B. 1s²2s²2p3; X2O5.
+P 37 sizes: None, None, None, None, None, None, None, None, None, None, None, None, None - text: C. 1s²2s²2p63s²3p5; X2O5.	    
+P 38 sizes: None, None, None, None, None, None, None, None, None, None, None - text: D. 1s²2s²2p63s²3p3; X2O5.
+P 39 sizes: None, None, None, None, None, None, None, None, None, None, None - text: Câu 7: Số liên kết σ và liên k
+P 40 sizes: None, None, None, None - text: A. 2 và 3.	    
+P 41 sizes: None, None, None, None - text: B. 1 và 2.	    
+P 42 sizes: None, None, None, None - text: C. 3 và 3.	    
+P 43 sizes: None, None, None - text: D. 3 và 2.
+P 44 sizes: None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None - text: Câu 8: Nguyên tử của nguyên tố
+P 45 sizes: None, None, None, None - text: A. chu kì 2.	    
+P 46 sizes: None, None, None, None - text: B. chu kì 4.	    
+P 47 sizes: None, None, None, None - text: C. chu kì 5.	    
+P 48 sizes: None, None - text: D. chu kì 3.
+P 49 sizes: None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None - text: Câu 9: Nguyên tố R thuộc nhóm 

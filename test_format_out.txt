@@ -1,0 +1,8 @@
+Found paragraph: Mã đề thi 987
+Run text: 'Mã đề thi 987' - Bold: True
+Run text: '' - Bold: True
+Run text: '' - Bold: True
+Run text: '' - Bold: True
+Run text: '' - Bold: True
+Run text: '' - Bold: True
+Run text: '' - Bold: True

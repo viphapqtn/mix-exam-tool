@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.env
+venv/
+env/
+.venv/
+.env/
+tmp/
+*.docx
+!De goc.docx
+!Made 302.docx
+*.zip
+*.txt
+!requirements.txt
+!test_out.txt
+*.json
+!vercel.json

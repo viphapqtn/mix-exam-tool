@@ -1,0 +1,30 @@
+0:     A. 2.	    	B. 8.	    C. 4.	    D. 6.
+1: Câu 11: Cation M+ có cấu hình electron là 1s22s22p6. Cấu hình electron của nguyên tử M là
+2:     A. 1s22s22p63s2.	    B. 1s22s22p4.	    C. 1s22s22p2.	    D. 1s22s22p63s1.
+3: Câu 12: Dãy các chất nào sau đây mà các phân tử đều liên kết cộng hóa trị không phân cực?
+4:     A. N2, HI, Cl2, CH4.	    B. N2, Cl2, H2, HCl.	
+5:     C. N2, NH3, Cl2, H2.	    D. Cl2, O2, N2, H2.
+6: PHẦN II. Câu trắc nghiệm đúng sai (2,0 điểm). Thí sinh trả lời từ câu 1 đến câu 2. Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh chọn đúng hoặc sai.
+7: Câu 1: Sulfur (S) là nguyên tố thuộc nhóm VIA, chu kì 3 của bảng tuần hoàn các nguyên tố hóa học. 
+8:     a) Nguyên tử S có 6 lớp electron và có 10 electron p.
+9:     b) Công thức oxide cao nhất của S có dạng SO2 và là acidic oxide.
+10:     c) Nguyên tố S có tính phi kim yếu hơn so với nguyên tố có số hiệu nguyên tử là 8.
+11:     d) Hydroxide cao nhất của S có dạng H2SO4 và có tính base.
+12: Câu 2: Cho hai nguyên tố X và Y có số hiệu nguyên tử lần lượt là 12 và 8. 
+13:     a) Số electron hoá trị của X và Y lần lượt là 6 và 2.
+14:     b) Hợp chất tạo thành giữa X và Y có liên kết ion và có công thức là XY.
+15:     c) Hợp chất tạo thành giữa X và Y có nhiệt độ nóng chảy cao.
+16:     d) Khi tạo thành hợp chất, nguyên tử X nhường 2 electron và nguyên tử Y nhận 2 electron.
+17: PHẦN III. Câu trắc nghiệm trả lời ngắn (2,0 điểm). Thí sinh trả lời từ câu 1 đến câu 8.
+18: Câu 1: Cho dãy các chất: N2, Cl2, O2, F2, H2O, KCl. Có bao nhiêu chất trong dãy mà phân tử chỉ chứa liên kết cộng hóa trị không phân cực? 
+19: Câu 2: Cho các nguyên tố sau: 3Li, 11Na, 19K và các giá trị bán kính nguyên tử (theo đơn vị pm) là: 227; 152; 186. Dựa vào quy luật biến đổi bán kính nguyên tử, hãy tìm giá trị bán kính nguyên tử của nguyên tố Li? 
+20: Câu 3: Cho dãy các ion: HCO3-, S2-, Ag+, SO42-, NH4+, CO32-, Na+, NO3-, Cl-, Cu2+, Al3+.  Có bao nhiêu cation trong dãy trên? 
+21: Câu 4: Nguyên tố R thuộc chu kì 3, nhóm VA của bảng tuần hoàn. Trong cấu hình electron của nguyên tử R có bao nhiêu electron s? 
+22: Câu 5: Có bao nhiêu hợp chất ion tạo thành từ các ion sau: Al3+, Mg2+, O2-. 
+23: Câu 6: Cấu hình electron lớp ngoài cùng của R là 2s22p2. Trong oxide cao nhất với oxygen, R chiếm bao nhiêu % về khối lượng? (Làm tròn kết quả đến phần mười). 
+24: Cho O = 16; N = 14; C = 12; P = 31; S = 32; Si = 28. 
+25: Câu 7: Nguyên tố calcium thuộc ô 20 trong bảng tuần hoàn. Hóa trị của calcium trong công thức oxide cao nhất là bao nhiêu? 
+26: Câu 8: Nguyên tử của nguyên tố Sodium có 11 proton và 12 neutron. Tổng số các hạt (proton, neutron và electron) trong nguyên tử sodium là bao nhiêu? 
+27: -------------- HẾT ---------------
+28: 	- Thí sinh không được sử dụng tài liệu;
+29: - Cán bộ coi thi không giải thích gì thêm.

@@ -1,0 +1,47 @@
+2: [B]PHẦN I. Câu trắc nghiệm nhiều phương án lựa chọn[B] (3,0 điểm).[] Thí sinh trả lời từ câu 1 đến câu 12. Mỗi câu hỏi thí sinh chỉ chọn một phương án.
+3: [B]Câu 1: [C(000000)]Liên kết hoá học trong phân tử [C(000000)]NH[C(000000)]3[C(000000)] []thuộc loại[C(000000)] liên[C(000000)] k[C(000000)]ế[C(000000)]t[C(000000)] [] [B] 
+4: [B]    A. [U,H(YELLOW (7))]cộng hoá trị phân cực[].[]	[B]    B. [C(000000)]cộng hoá trị không phân cực. [C(000000)]	
+5: [B]    C. []ion.[]	[B]    D. [C(000000)]cho-nhận.
+6: [B]Câu 2: []Cho các phát biểu sau:
+7: [U,H(YELLOW (7))](a) Liên kết ion là[] liên kết được hình thành bởi lực hút tĩnh điện giữa các ion mang điện tích trái dấu.
+8: [](b) Trong phân tử C[]2[]H[]2[] []không có liên kết ba[].
+9: [U,H(YELLOW (7))](c) Độ âm điện của[] nguyên tử là đại lượng đặc trưng cho khả năng hút electron của nguyên tử một nguyên tố hóa học khi tạo thành liên kết hóa học.
+10: [U,H(YELLOW (7))](d) Liên[] kết đôi gồm một liên kết []σ[] và một liên kết []π[].
+11: [U,H(YELLOW (7))](đ) Phân tử CO[U,H(YELLOW (7))]2[] có hai liên kết đôi.
+12: []Số phát biểu đúng là
+13: [B]    A. [H(YELLOW (7))]4.[]	[B]    B. []3.[]	[B]    C. []1.[]	[B]    D. []2.
+14: [B]Câu 3: []Chất nào sau đây có chứa liên kết []ba[] trong phân tử?
+15: [B]    A. []CH[]4[].[]	[B]    B. [U,H(YELLOW (7))]N[U,H(YELLOW (7))]2[].[]	[B]    C. []Cl[]2[].[]	[B]    D. []N[]2[].
+16: [B]Câu 4: []B[]ảng tuần hoàn hiện nay có []bao nhiêu[] []nhóm B?[B]   []	[B]    []	[B]    []	
+17: [B]    A. []18.[B]	[B]    B. []6. [B]	[B]    C. [U,H(YELLOW (7))]8.[B]	[B]    D. []7.
+18: [B]Câu 5: []Những đại lượng và tính chất nào của nguyên tố hóa học cho dưới đây không biến đổi tuẩn hoàn theo chiều tăng của điện tích hạt nhân nguyên tử? 
+19: [B]    [B]A. []Tính accid []–[] b[]ase của các hydroxide.
+20: [B]    B. []Cấu hình electron lớp ngoài cùng của nguyên tử.
+21: [B]    C. [U,H(YELLOW (7))]Điện tích hạt nhân nguyên tử[].[]	
+22: [B]    [B]D. []Tính kim loại và phi kim.
+23: [B]Câu 6: []Trong bảng tuần hoàn, nguyên tố X nằm ở chu kì 3, nhóm VA. Cấu hình electron nguyên tử của nguyên tố X và oxide cao nhất của X là [H(YELLOW (7))] 
+24: [B]    A. []1s²2s²2p[]5[]; []X[]2[]O[]5[].[B]	[B]    [B]	[B]B. []1s²2s²2p[]3[]; X[]2[]O[]5[].
+25: [B]    C. []1s²2s²2p[]6[]3s²3p[]5[]; X[]2[]O[]5[].[]	[B]    [B]	[B]D. [U,H(YELLOW (7))]1s²2s²2p[U,H(YELLOW (7))]6[U,H(YELLOW (7))]3s²3p[U,H(YELLOW (7))]3[U,H(YELLOW (7))]; [U,H(YELLOW (7))]X[U,H(YELLOW (7))]2[U,H(YELLOW (7))]O[U,H(YELLOW (7))]5[U,H(YELLOW (7))].
+26: [B]Câu 7: []Số liên kết []σ[] []và liên kết []π[] có trong phân tử C[]2[]H[]2[] lần lượt là 
+27: [B]    A. []2 và 3.[]	[B]    B. []1 và 2.[]	[B]    C. []3 và 3.[]	[B]    D. [U,H(YELLOW (7))]3 và 2[].
+28: [B]Câu 8: []Nguyên tử []của nguyên tố []X có cấu hình electron: 1s[]2[]2s[]2[]2p[]6[]3s[]2[]3p[]6[]4s[]2[].[] Trong bảng tuần hoàn, nguyên tố []X []nằm ở
+29: [B]    A. []chu kì 2.[B,C(0000FF)]	[B]    [B]B. [U,H(YELLOW (7))]chu kì 4.[B,C(0000FF)]	[B]    C. []chu kì 5.[B,C(0000FF)]	[B]    D. []chu kì 3.
+30: [B]Câu 9: []Nguyên tố R thuộc nhóm A trong bảng tuần hoàn. Oxide cao nhất của R có công thức hóa học là R[]2[]O. []Số electron lớp ngoài cùng của []R[] là
+31: [B]    A. [U,H(YELLOW (7))]1 electron[].[]	[B]    B. []4 []electron[].[]	[B]    C. []3 electron.[]	[B]    D. []2[] electron.
+32: [B]Câu 10: []Silicon được dùng làm chất bản dẫn trong kĩ thuật vô tuyến điện, chế tạo pin mặt trời. Nguyên tử của nguyên tố silicon có 3 lớp electron. Lớp ngoài cùng có 4 electron. Nguyên tử Silicon có số electron p là
+33: [B]    A. []2.[]	[B]    [B]	[B]B. [H(YELLOW (7))]8.[]	[B]    C. []4.[]	[B]    D. []6.
+35: [B]Câu 11: []Cat[]ion []M[]+[] có cấu hình electron là 1s[]2[]2s[]2[]2p[]6[]. Cấu hình electron của nguyên tử []M[] là
+36: [B]    A. []1s[]2[]2s[]2[]2p[]6[]3s[]2[].[]	[B]    B. []1s[]2[]2s[]2[]2p[]4[].[]	[B]    C. []1s[]2[]2s[]2[]2p[]2[].[]	[B]    D. [U,H(YELLOW (7))]1s[U,H(YELLOW (7))]2[U,H(YELLOW (7))]2s[U,H(YELLOW (7))]2[U,H(YELLOW (7))]2p[U,H(YELLOW (7))]6[U,H(YELLOW (7))]3s[U,H(YELLOW (7))]1[].
+37: [B]Câu 12: []Dãy []các chất []nào sau đây []mà các phân tử đều[] liên kết cộng hóa trị []không []phân cực?
+38: [B]    A. []N[]2[], HI, Cl[]2[], CH[]4[].[]	[B]    B. []N[]2[], Cl[]2[], H[]2[], HCl.[]	
+39: [B]    C. []N[]2[], NH[]3[], Cl[]2[], H[]2[].[]	[B]    [B]D. [U,H(YELLOW (7))]Cl[U,H(YELLOW (7))]2[U,H(YELLOW (7))], O[U,H(YELLOW (7))]2[U,H(YELLOW (7))], N[U,H(YELLOW (7))]2[U,H(YELLOW (7))], [U,H(YELLOW (7))]H[U,H(YELLOW (7))]2[H(YELLOW (7))].
+40: [B]PHẦN II. Câu trắc nghiệm đúng sai[B] (2,0 điểm).[B] []Thí sinh trả lời từ câu 1 đến câu 2. [B]Trong mỗi ý a), b), c), d)[] ở mỗi câu, thí sinh chọn đúng hoặc sai.
+41: [B]Câu 1: []Sulfur (S) là nguyên tố thuộc nhóm VIA, chu kì 3 của bảng tuần hoàn các nguyên tố hóa học. 
+42: [B]    [B]a) []Nguyên tử S có 6 lớp electron và có 10 electron p.
+43: [B]    b) []Công thức oxide cao[] nhất của S có dạng SO[]2[] và là acidic oxide.
+44: [B]    c) [U,H(YELLOW (7))]Nguyên tố S có tính phi kim yếu hơn[] so với nguyên tố có số hiệu nguyên tử là 8.
+45: [B]    d) []Hydroxide cao nhất của S có dạng H[]2[]SO[]4[] và có tính base.
+46: [B]Câu 2: []Cho hai nguyên tố X và Y có số hiệu nguyên tử lần lượt là []12[] và []8[].[B,U,H(YELLOW (7))] 
+47: [B]    a) [C(000000)]Số electron hoá trị của X và Y lần lượt là [C(000000)]6[C(000000)] và 2.
+48: [B]    b) [U,C(000000),H(YELLOW (7))]Hợp chất tạo thành giữa X và Y có liên kết ion và có công thức là XY.
+49: [B]    c) [U,C(000000),H(YELLOW (7))]Hợp chất tạo thành giữa X và Y có nhiệt độ nóng chảy cao[C(000000)].

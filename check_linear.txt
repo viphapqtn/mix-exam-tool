@@ -1,0 +1,15 @@
+
+=== PARAS ===
+0: PHẦN I. Câu trắc nghiệm nhiều phương án lựa chọn (3,0 điểm). Thí sinh trả lời từ câu 1 đến câu 12. Mỗi câu hỏi thí sinh chỉ chọn một phương án.
+1: Câu 1: Cho các phát biểu sau:
+2: (a) Liên kết ion là liên kết được hình thành bởi lực hút tĩnh điện giữa các ion mang điện tích trái dấu.
+3: (b) Trong phân tử C2H2 không có liên kết ba.
+4: (c) Độ âm điện của nguyên tử là đại lượng đặc trưng cho khả năng hút electron của nguyên tử một nguyên tố hóa học khi tạo thành liên kết hóa học.
+5: (d) Liên kết đôi gồm một liên kết σ và một liên kết π.
+6: (đ) Phân tử CO2 có hai liên kết đôi.
+7: Số phát biểu đúng là
+8: Câu 2: Cation M+ có cấu hình electron là 1s22s22p6. Cấu hình electron của nguyên tử M là
+9: Câu 3: Dãy các chất nào sau đây mà các phân tử đều liên kết cộng hóa trị không phân cực?
+
+=== TABLES ===
+Table 0 Row 0: ['TRƯỜNG THPT BÃI CHÁY\nTỔ HÓA SINH', 'ĐỀ KIỂM TRA CUỐI HỌC KÌ I\nNĂM HỌC 2025 - 2026\nMôn: Hóa học – Khối 10\nThời gian làm bài: 45 phút, không kể thời gian phát đề']

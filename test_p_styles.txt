@@ -1,0 +1,81 @@
+P index 49: 'Câu 9: Nguyên tố R thuộc nhóm ' style: Normal_35 
+  Run 'Câu 9: ' - size None
+  Run 'Nguyên tố R thuộc nhóm A trong bảng tuần hoàn. Oxide cao nhất của R có công thức hóa học là R' - size None
+  Run '2' - size None
+  Run 'O. ' - size None
+  Run 'Số' - size None
+  Run ' electron ' - size None
+  Run 'lớp' - size None
+  Run ' ' - size None
+  Run 'ngoài' - size None
+  Run ' ' - size None
+  Run 'cùng' - size None
+  Run ' ' - size None
+  Run 'của' - size None
+  Run ' ' - size None
+  Run 'R' - size None
+  Run ' ' - size None
+  Run 'là' - size None
+P index 54: 'Câu 10: Silicon được dùng làm ' style: Normal_1_0 
+  Run 'Câu' - size None
+  Run ' 10: ' - size None
+  Run 'Silicon ' - size None
+  Run 'được' - size None
+  Run ' ' - size None
+  Run 'dùng' - size None
+  Run ' ' - size None
+  Run 'làm' - size None
+  Run ' ' - size None
+  Run 'chất' - size None
+  Run ' ' - size None
+  Run 'bản' - size None
+  Run ' ' - size None
+  Run 'dẫn' - size None
+  Run ' ' - size None
+  Run 'trong' - size None
+  Run ' ' - size None
+  Run 'kĩ' - size None
+  Run ' ' - size None
+  Run 'thuật' - size None
+  Run ' ' - size None
+  Run 'vô' - size None
+  Run ' ' - size None
+  Run 'tuyến' - size None
+  Run ' ' - size None
+  Run 'điện' - size None
+  Run ', ' - size None
+  Run 'chế' - size None
+  Run ' ' - size None
+  Run 'tạo' - size None
+  Run ' pin ' - size None
+  Run 'mặt' - size None
+  Run ' ' - size None
+  Run 'trời' - size None
+  Run '. Nguyên ' - size None
+  Run 'tử' - size None
+  Run ' ' - size None
+  Run 'của' - size None
+  Run ' ' - size None
+  Run 'nguyên' - size None
+  Run ' ' - size None
+  Run 'tố' - size None
+  Run ' silicon ' - size None
+  Run 'có' - size None
+  Run ' 3 ' - size None
+  Run 'lớp' - size None
+  Run ' electron. ' - size None
+  Run 'Lớp' - size None
+  Run ' ' - size None
+  Run 'ngoài' - size None
+  Run ' ' - size None
+  Run 'cùng' - size None
+  Run ' ' - size None
+  Run 'có' - size None
+  Run ' 4 electron. Nguyên ' - size None
+  Run 'tử' - size None
+  Run ' Silicon ' - size None
+  Run 'có' - size None
+  Run ' ' - size None
+  Run 'số' - size None
+  Run ' electron p ' - size None
+  Run 'là' - size None
