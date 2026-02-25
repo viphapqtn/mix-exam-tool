@@ -211,10 +211,19 @@ def get_or_create_r(text, is_bold=True):
 
 def strip_option_prefix(new_p):
     t_nodes = new_p.xpath('.//w:t')
-    if t_nodes:
+    full_text = "".join(t.text for t in t_nodes if t.text)
+    match = re.match(r'^\s*([A-D]|[a-d])[.)]\s*', full_text)
+    if match:
+        to_remove = len(match.group(0))
         for t in t_nodes:
-            if t.text and re.match(r'^\s*([A-D]|[a-d])[.)]', t.text):
-                t.text = re.sub(r'^\s*([A-D]|[a-d])[.)]\s*', '', t.text)
+            if not t.text: continue
+            if to_remove >= len(t.text):
+                to_remove -= len(t.text)
+                t.text = ""
+            elif to_remove > 0:
+                t.text = t.text[to_remove:]
+                to_remove = 0
+            else:
                 break
                 
 def strip_question_prefix(new_p):
